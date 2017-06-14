@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./alphabet.component.css']
 })
 export class AlphabetComponent implements OnInit {
-
+  alphabet: Array<string> = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
   constructor() { }
 
   ngOnInit() {
+    console.log(this.alphabet.length);
+    
   }
 
 }

@@ -4,7 +4,7 @@ import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { DashboardComponent } from './core/dashboard/dashboard.component'
 
 const appRoutes: Routes = [
-  {path: '', component: DashboardComponent},
+  {path: 'dashboard', component: DashboardComponent},
   {path: 'hangman', loadChildren: './hangman/hangman.module#HangmanModule'}
 ];
 

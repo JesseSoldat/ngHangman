@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './../app-routing.module';
 import { NgModule } from '@angular/core';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavComponent } from './nav/nav.component';
@@ -8,10 +9,10 @@ import { NavComponent } from './nav/nav.component';
     NavComponent
   ],
   imports: [
-
+    AppRoutingModule
   ],
   exports: [
-
+    NavComponent
   ],
   providers: [
 

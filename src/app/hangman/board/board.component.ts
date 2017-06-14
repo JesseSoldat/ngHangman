@@ -10,6 +10,8 @@ export class BoardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log('board');
+    
   }
 
 }

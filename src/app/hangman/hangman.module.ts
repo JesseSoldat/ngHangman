@@ -6,13 +6,15 @@ import { BoardComponent } from './board/board.component';
 import { CountComponent } from './board/count/count.component';
 import { AlphabetComponent } from './board/alphabet/alphabet.component';
 import { LetterComponent } from './board/alphabet/letter/letter.component';
+import { WordComponent } from './board/word/word.component';
 
 @NgModule({
   declarations: [
     BoardComponent,
     CountComponent,
     AlphabetComponent,
-    LetterComponent
+    LetterComponent,
+    WordComponent
   ],
   imports: [
     CommonModule,
