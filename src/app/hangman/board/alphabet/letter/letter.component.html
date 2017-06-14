@@ -1,3 +1,10 @@
-<div id="letterBox">
+<div id="letterBox"
+*ngIf="clicked === false"
+(click)="pickLetter(letter)">
+  {{letter}}
+</div>
+
+<div id="clickedLetter"
+*ngIf="clicked === true">
   {{letter}}
 </div>

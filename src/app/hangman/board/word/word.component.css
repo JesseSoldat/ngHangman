@@ -1,0 +1,31 @@
+div {
+  margin: 0;
+  padding: 0;
+}
+#wordWrapper {
+  position: relative;
+  height: 60px;
+}
+#letter {
+  display: inline-block;
+  font-size: 2em;
+  width: 25px;
+  height: 30px;
+  margin-right: 25px;
+  /*margin-bottom: 3px;
+  padding-bottom: 3px;*/
+}
+
+#lineWrapper {
+  position: absolute;
+  bottom: 3px;
+}
+
+#letterLine {
+  display: inline-block;
+  border-top: 3px solid black;
+  font-size: 2em;
+  width: 25px;
+  height: 1px;
+  margin-right: 25px;
+}

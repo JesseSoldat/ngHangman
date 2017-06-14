@@ -1,8 +1,11 @@
-#letterBox {
+#letterBox, #clickedLetter {
   display: inline-block;
   padding: 5px 10px;
   font-size: 1.4em;
   margin: 3px;
   border: 2px solid black;
   cursor: pointer;
+}
+#clickedLetter {
+  background: red;
 }

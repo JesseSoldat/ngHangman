@@ -1,14 +1,19 @@
 <div id="spacer"></div>
 <div class="col-xs-12">
-  <div class="col-xs-2">
+  <div class="col-xs-1">
     <app-count></app-count>
   </div>
-  <div class="col-xs-4">
-
+  <div class="col-xs-5">
+    <app-word
+    [wordLine]="wordLine"
+    [word]="word"
+    ></app-word>
   </div>
   <div class="col-xs-6">
-    <app-alphabet></app-alphabet>
+    <app-alphabet
+      (pickedLetter)="onPickedLetter($event)"
+    ></app-alphabet>
   </div>
 </div>
-
+<hr>
 <h3>Board</h3>

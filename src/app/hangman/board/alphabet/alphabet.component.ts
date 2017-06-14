@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-alphabet',
@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlphabetComponent implements OnInit {
   alphabet: Array<string> = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  @Output() pickedLetter: EventEmitter<string> = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
-    console.log(this.alphabet.length);
     
+  }
+
+  onPickedLetter(letter) {
+    this.pickedLetter.emit(letter);   
   }
 
 }

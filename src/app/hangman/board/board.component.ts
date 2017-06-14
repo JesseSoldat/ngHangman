@@ -6,12 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./board.component.css']
 })
 export class BoardComponent implements OnInit {
+  word: Array<string> = [];
+  wordLine: Array<string>;
 
-  constructor() { }
+  constructor() { 
+    this.wordLine = 'tiger'.split('');;
+  }
+  ngOnInit() {  
+  }
 
-  ngOnInit() {
-    console.log('board');
-    
+  onPickedLetter(letter) {
+    let tempWord = this.wordLine;
+    let index = tempWord.indexOf(letter.toLowerCase());
+    console.log(index);
+    this.word[index] = letter;  
   }
 
 }

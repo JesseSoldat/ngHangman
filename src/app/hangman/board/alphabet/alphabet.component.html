@@ -2,7 +2,8 @@
   <div>
     <app-letter
     *ngFor="let letter of alphabet; let i = index;"
-    [letter]="letter">
+    [letter]="letter"
+    (pickedLetter)="onPickedLetter($event)">
     </app-letter>
    
   </div>
